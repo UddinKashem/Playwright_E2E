@@ -48,12 +48,10 @@ test('Todo Add Complete Delete @smoke', async ({ page }) => {
 
     //mark second item to complete
     await items.nth(1).locator('.toggle').check();
-
     //select thrid item (hover + click to destroy)
     await items.nth(2).hover();
     await items.nth(2).locator('.destroy').click({force: true});
     await expect(items).toHaveCount(2);
 
     await page.screenshot({path: './screenshots/todo-final.png'});
-
 });
