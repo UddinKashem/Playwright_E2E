@@ -17,11 +17,11 @@ test.describe('todo tests', () => {
 
   test('should add an item', async () => {
     await todoPage.addToDo('my item');
-    // ...
+    // ...Add validation
   });
 
   test('should remove an item', async () => {
     await todoPage.remove('item1');
-    // ...
+    // ...Add validation
   });
 });
